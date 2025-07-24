@@ -181,7 +181,7 @@
                                         <h1 class="text-[#570807] md:text-xl text-md font-bold italic">Bayar per orang
                                         </h1>
                                         <h1 class="text-[#940f0d] md:text-xl text-md font-bold">
-                                            Rp{{ number_format($data->price * 1000000, 0, ',', '.') }} per
+                                            Rp {{ number_format($data->price * 1000000, 0, ',', '.') }} per
                                             pax
                                         </h1>
                                     </div>
@@ -191,8 +191,7 @@
 
                                 <div class="flex justify-between items-center w-[100%] md:mt-6 mt-3 md:mb-2 mb-5">
                                     <h1 class="text-[#570807] text-xl font-bold italic">Total</h1>
-                                    <h1 class="text-[#570807] text-xl font-bold">Rp.
-                                        {{ $data->price }}.000.000</h1>
+                                    <h1 class="text-[#570807] text-xl font-bold">Rp {{ number_format($data->price * 1000000, 0, ',', '.') }}</h1>
                                 </div>
                                 <input type="hidden" name="payment_id" value="{{ $data->payment_id }}">
                                 <input type="hidden" name="payment_method" id="selectedMethod" value="MasterCard">
