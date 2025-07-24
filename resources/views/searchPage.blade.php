@@ -64,12 +64,12 @@
     <div id="profIcon" class="absolute md:top-0 md:right-0 right-5 z-[10] flex items-center md:mr-10 mt-7">
         @auth
             <a href="{{ route('profile') }}">
-                <img src="{{ asset('assets/iconLog.png') }}" alt=""
+                <img src="{{ asset('assets/IconLog.png') }}" alt=""
                     class="w-[80px] pt-3 hover:scale-[1.1] transition-all duration-100">
             </a>
         @else
             <a href="{{ route('login') }}">
-                <img src="{{ asset('assets/iconLog.png') }}" alt=""
+                <img src="{{ asset('assets/IconLog.png') }}" alt=""
                     class="w-[80px] pt-3 hover:scale-[1.1] transition-all duration-100">
             </a>
         @endauth
