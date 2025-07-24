@@ -6,7 +6,7 @@
     if ($id) {
         $hasCurrentUser = $users->contains('id', $id);
     }
-    dd($home);
+    dd($home->fsq_id);
 
     // dd($home->first()->max_pax, $userCount);
 
