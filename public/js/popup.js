@@ -94,7 +94,7 @@ window.initPopupEvents = function () {
                                                 </div>
                                             </div>
                                             <div class="info text-[16px] w-[70%]">
-                                                <h1 class="font-popReg font-bold pb-1">Toleransi merokok/h1>
+                                                <h1 class="font-popReg font-bold pb-1">Toleransi merokok</h1>
                                                 <h1 class="font-popReg text-[#797979]">${ data.user.preference.smoking }
                                                 </h1>
                                             </div>
