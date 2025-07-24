@@ -23,6 +23,7 @@ window.initPopupEvents = function () {
         // e.preventDefault();
         const wlid = document.getElementById("wlid").value;
         const fsq = document.getElementById("homestay_id").value;
+        console.log(fsq);
 
         fetch("/buddies/join", {
                 method: "POST",
