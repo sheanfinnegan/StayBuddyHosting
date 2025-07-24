@@ -325,6 +325,7 @@ window.initPopupEvents = function () {
                     const waitContainer = document.querySelector(".waitList");
                     let html = window.renderWaitingList(data.waitingList, data.home.fsq_id, data.home);
                     waitContainer.innerHTML = html;
+                    console.log(data.home);
                     console.log(data.home.fsq_id);
                 console.log(document.querySelector(`.homeCardContainer[data-fsq-id="${data.home.fsq_id}"]`));
 
