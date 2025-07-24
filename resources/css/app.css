@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-pop: 'Poppins';
+    --font-popB: 'popBold';
+    --font-popReg: 'popReg';
+    --font-nunitoBold: 'NunitoBold';
+    
+    --color-putih: #F4F3E6;
+    --color-krem: #FAF9F3;
+    --color-kuning: #F8A91F;
+    --color-oranye: #FF5F1F;
+    --color-merah: #D62300;
+    --color-maroon: #570807;
+    --color-cream: rgba(244, 243, 230, 0.47);
+    --color-abu: #838383
+    
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/font/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'popBold';
+    src: url('/public/font/Poppins-ExtraBold.ttf');
+}
+
+.indicator{
+    transition: left .4s;
+}
+
+@font-face {
+    font-family: 'popReg';
+    src: url('/public/font/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NunitoBold';
+    src: url('/public/font/Nunito-Bold.ttf');
+
+}

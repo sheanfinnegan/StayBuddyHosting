@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Feature\\HistoryControllerTest::test_user_can_see_their_transaction_history":8},"times":{"Tests\\Unit\\ExampleTest::test_that_true_is_true":0.007,"Tests\\Feature\\ExampleTest::test_the_application_returns_a_successful_response":0.062,"Tests\\Feature\\HistoryControllerTest::test_user_can_see_their_transaction_history":0.014}}

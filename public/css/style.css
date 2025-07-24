@@ -1,0 +1,45 @@
+.ipt-date::-webkit-input-placeholder {
+    color: gray;
+}
+
+input[type="radio"]:checked {
+    accent-color: #570807;
+}
+
+.custom-popup .leaflet-popup-content {
+    font-size: 9px;          /* Ukuran font kecil */
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pulse-circle {
+    animation: pulse 2s infinite;
+}
+
+.custom-popup {
+    font-size: 30px;
+    /* font-weight: bold; */
+    color: #333;
+  }
+
+.active-bar {
+    background-color: #F4F3E6;
+}
+
+@keyframes pulse {
+    0% {
+        r: 0;
+        opacity: 0.3;
+    }
+    50% {
+        r: 1.1;
+        opacity: 0.6;
+    }
+    100% {
+        r: 1;
+        opacity: 0.3;
+    }
+}
