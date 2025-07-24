@@ -181,7 +181,7 @@
                                         <h1 class="text-[#570807] md:text-xl text-md font-bold italic">Bayar per orang
                                         </h1>
                                         <h1 class="text-[#940f0d] md:text-xl text-md font-bold">
-                                            {{ $data->price }}.000.000 per
+                                            Rp{{ number_format($data->price * 1000000, 0, ',', '.') }} per
                                             pax
                                         </h1>
                                     </div>
