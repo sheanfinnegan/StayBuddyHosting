@@ -325,11 +325,10 @@ window.initPopupEvents = function () {
                     const waitContainer = document.querySelector(".waitList");
                     let html = window.renderWaitingList(data.waitingList, data.home.fsq_id, data.home);
                     waitContainer.innerHTML = html;
+                console.log(document.querySelector(`.homeCardContainer[data-fsq-id="${data.home.fsq_id}"]`););
 
-
-                    const homeCard = document.querySelector(
-                        `.homeCardContainer[data-fsq-id="${data.home.fsq_id}"] .availWL`);
-                    console.log(homeCard);
+                    const homeCard = document.querySelector(`.homeCardContainer[data-fsq-id="${data.home.fsq_id}"] .availWL`);
+                    
 
                     homeCard.textContent = `Available (${data.joinedCount} Waiting List)`;
 
