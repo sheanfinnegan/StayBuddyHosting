@@ -6,7 +6,6 @@
     if ($id) {
         $hasCurrentUser = $users->contains('id', $id);
     }
-    dd($home->fsq_id);
 
     // dd($home->first()->max_pax, $userCount);
 
@@ -39,7 +38,7 @@
                     {{ $userCount != 0 ? 'BUDDIES DETAIL' : 'BUAT BUDDIES' }}</h2>
             </div>
             <div id="uCount" class="text-xl absolute md:top-2 top-3 right-10 font-bold text-[#FF5F1F]">
-                {{ $userCount . '/' . $home->first()->max_pax }}</div>
+                {{ $userCount . '/' . $home->max_pax }}</div>
 
         </div>
 
@@ -325,11 +324,11 @@
                 @endforeach
             @endif
 
-            @if ($userCount < $home->first()->max_pax)
+            @if ($userCount < $home->max_pax)
                 <div class="joincard">
 
 
-                    <input type="hidden" id="homestay_id" name="homestay_id" value="{{ $home->first()->fsq_id }}">
+                    <input type="hidden" id="homestay_id" name="homestay_id" value="{{ $home->fsq_id }}">
                     <input type="hidden" id="wlid" name="wlid" value="{{ $wlid }}">
                     @auth
                         <button type="button" id="popupAgree"
@@ -361,7 +360,7 @@
             @endif
 
         </div>
-        @if ($userCount == $home->first()->max_pax && $hasCurrentUser == true)
+        @if ($userCount == $home->max_pax && $hasCurrentUser == true)
             <div class="w-full flex justify-center">
                 <div
                     class="cursor-pointer shadow-md border-3 border-putih bg-[#88A825] py-4 rounded-2xl flex items-center justify-center gap-2 md:w-[30%] w-[80%] hover:scale-[1.03] duration-100 transition-all">
