@@ -47,9 +47,12 @@ window.initPopupEvents = function () {
                     // 1. Buat kartu baru dan inject ke dalam container popup
                     const cardList = document.querySelector("#listCardUser");
                     const newCard = document.createElement("div");
+                    newCard.classList.add("mr-0");
+                    newCard.classList.add("mb-5");
+                    newCard.classList.add("md:mb-0");
                     // newCard.classList.add("flip-card", "w-fit", "h-fit");
                     newCard.innerHTML = `
-                <div class="group perspective w-[300px] h-[480px] cursor-pointer md:mb-0 mb-5">
+                <div class="group perspective w-[300px] h-[480px] cursor-pointer">
                         <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-[.flipped]:rotate-y-180"
                             id="cardInner">
                             <div
