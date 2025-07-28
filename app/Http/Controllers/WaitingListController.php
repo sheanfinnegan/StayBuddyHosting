@@ -40,7 +40,7 @@ public function popupNew($fsq_id)
 
     
    
-    $homeDetails = HomeDetail::where('fsq_id', $fsq_id)->get();
+    $homeDetails = HomeDetail::where('fsq_id', $fsq_id)->first();
 
     dd($homeDetails);
 
