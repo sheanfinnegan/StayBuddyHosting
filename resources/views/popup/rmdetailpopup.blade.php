@@ -38,7 +38,7 @@
                     {{ $userCount != 0 ? 'BUDDIES DETAIL' : 'BUAT BUDDIES' }}</h2>
             </div>
             <div id="uCount" class="text-xl absolute md:top-2 top-3 right-10 font-bold text-[#FF5F1F]">
-                {{ $userCount . '/' . $home->max_pax }}</div>
+                {{ $userCount . '/' . $home->first()->max_pax }}</div>
 
         </div>
 
