@@ -44,11 +44,11 @@
 
         <!-- Card List -->
         <div id="listCardUser"
-            class="flex md:flex-row flex-col overflow-x-auto  space-x-4 py-4 justify-center items-center h-fit">
+            class="flex md:flex-row flex-col gap-10 overflow-x-auto space-x-4 py-4 justify-center items-center h-fit">
             <!-- Card 1-->
             @if (!$users->isEmpty())
                 @foreach ($users as $index => $user)
-                    <div class="group perspective w-[300px] h-[480px] cursor-pointer md:mb-0 mb-7">
+                    <div class="group perspective w-[300px] h-[480px] cursor-pointer md:mb-0 mb-7 md:mr-5 mr-0">
                         <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-[.flipped]:rotate-y-180"
                             id="cardInner">
                             {{-- Front Side --}}
