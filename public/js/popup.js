@@ -50,7 +50,7 @@ window.initPopupEvents = function () {
                     // newCard.classList.add("flip-card", "w-fit", "h-fit");
                     newCard.innerHTML = `
                 <div class="group perspective w-[300px] h-[480px] cursor-pointer">
-                        <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-[.flipped]:rotate-y-180"
+                        <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-[.flipped]:rotate-y-180 md:mb-0 mb-5"
                             id="cardInner">
                             <div
                                 class="absolute w-full h-full backface-hidden bg-[#570807] text-white rounded-3xl shadow-lg border-4 border-[#f8A91f] p-4">
