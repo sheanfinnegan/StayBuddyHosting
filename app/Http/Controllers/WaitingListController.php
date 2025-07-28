@@ -42,7 +42,7 @@ public function popupNew($fsq_id)
    
     $homeDetails = HomeDetail::where('fsq_id', $fsq_id)->get();
 
-    // dd($homeDetails);
+    dd($homeDetails);
 
     // Kirim ke Blade
     $html = view('popup.rmdetailpopup', [
