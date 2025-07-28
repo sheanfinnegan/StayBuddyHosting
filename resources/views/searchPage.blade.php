@@ -1170,7 +1170,7 @@
 
             if (!WaitingList || WaitingList.length < 5) {
                 html += `
-                    <div data-fsq-id=${fsq_id} class="makeWL flex justify-center gap-1 w-full border-black py-3 items-center border-t-[0.5px] cursor-pointer mt-7 md:mt-0">
+                    <div data-fsq-id=${fsq_id} class="makeWL flex justify-center gap-1 w-full border-black py-3 items-center border-t-[0.5px] cursor-pointer">
                         <ion-icon class="font-bold" name="add-outline"></ion-icon>
                         <p class="font-nunitoBold text-[13px]">Buat grup baru untuk Buddies</p>
                     </div>
