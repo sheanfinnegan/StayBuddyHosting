@@ -37,6 +37,7 @@ class WaitingListController extends Controller
 
 public function popupNew($fsq_id)
 {
+    dd($fsq_id);
 
     
    
