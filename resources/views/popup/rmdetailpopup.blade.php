@@ -48,7 +48,7 @@
             <!-- Card 1-->
             @if (!$users->isEmpty())
                 @foreach ($users as $index => $user)
-                    <div class="group perspective w-[300px] h-[480px] cursor-pointer md:mb-0 mb-7 md:mr-5 mr-0">
+                    <div class="group perspective w-[300px] h-[480px] cursor-pointer">
                         <div class="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-[.flipped]:rotate-y-180"
                             id="cardInner">
                             {{-- Front Side --}}
