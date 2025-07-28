@@ -7,7 +7,7 @@
         $hasCurrentUser = $users->contains('id', $id);
     }
 
-    dd($home->max_pax);
+    // dd($home->max_pax);
 
 @endphp
 <style>
