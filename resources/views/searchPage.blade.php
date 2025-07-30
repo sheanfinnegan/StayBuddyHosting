@@ -1190,11 +1190,16 @@
             document.addEventListener("click", async function(e) {
                 const buddiesEl = e.target.closest(".buddies");
                 const makeWLEl = e.target.closest(".makeWL");
+                const isLoggedIn = @json(Auth::check());
 
                 let url = "";
 
                 if (buddiesEl) {
                     e.preventDefault();
+                    if (!isLoggedIn) {
+                        window.location.href = '/login';
+                        return;
+                    }
                     const wlid = buddiesEl.dataset.wlid;
                     const fsq_id = buddiesEl.dataset.fsqId;
                     url =
@@ -1460,34 +1465,39 @@
                             
                             `
 
-                            const popupAgree = document.getElementById('popupAgree');
-                            // console.log(popupAgree)
-                            popupAgree.addEventListener('click', () => {
-                                document.body.insertAdjacentHTML('beforeend', popUpagree);
-                                setTimeout(() => {
-                                    const closeBtnAgree = document.getElementById(
-                                        'closePopupAgree');
-                                    const closeAgree = document.getElementById(
-                                        'popupConAgree');
-                                    console.log(closeBtnAgree);
+                            if (isLoggedIn) {
+                                const popupAgree = document.getElementById('popupAgree');
+                                // console.log(popupAgree)
+                                popupAgree.addEventListener('click', () => {
+                                    document.body.insertAdjacentHTML('beforeend',
+                                        popUpagree);
+                                    setTimeout(() => {
+                                        const closeBtnAgree = document
+                                            .getElementById(
+                                                'closePopupAgree');
+                                        const closeAgree = document.getElementById(
+                                            'popupConAgree');
+                                        console.log(closeBtnAgree);
 
-                                    if (closeBtnAgree) {
-                                        closeBtnAgree.addEventListener('click',
-                                            () => {
-                                                closeAgree.remove();
-                                            });
+                                        if (closeBtnAgree) {
+                                            closeBtnAgree.addEventListener('click',
+                                                () => {
+                                                    closeAgree.remove();
+                                                });
+                                        }
+                                    }, 50);
+
+                                    const joinBtn = document.querySelector("#joinBtn");
+                                    console.log(joinBtn);
+                                    if (joinBtn && typeof window.initPopupEvents ===
+                                        "function") {
+                                        window.initPopupEvents();
                                     }
-                                }, 50);
-
-                                const joinBtn = document.querySelector("#joinBtn");
-                                console.log(joinBtn);
-                                if (joinBtn && typeof window.initPopupEvents ===
-                                    "function") {
-                                    window.initPopupEvents();
-                                }
 
 
-                            })
+                                })
+
+                            }
 
 
 
